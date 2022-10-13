@@ -41,7 +41,7 @@
             this.connexion.Name = "connexion";
             this.connexion.Size = new System.Drawing.Size(239, 35);
             this.connexion.TabIndex = 1;
-            this.connexion.Text = "test";
+            this.connexion.Text = "connexion";
             this.connexion.UseVisualStyleBackColor = true;
             this.connexion.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -58,6 +58,7 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(239, 20);
             this.password.TabIndex = 2;
+            this.password.UseSystemPasswordChar = true;
             // 
             // label1
             // 

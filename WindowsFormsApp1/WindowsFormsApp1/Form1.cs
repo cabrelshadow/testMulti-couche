@@ -27,12 +27,13 @@ namespace WindowsFormsApp1
          if(email.Text=="admin" && password.Text == "admin")
             {
                 authentification auth = new authentification();
-                this.Hide();
+             
                 auth.Show();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("login ou mot de passe incorrect");
+                MessageBox.Show("login ou mot de passe incorrect","error",MessageBoxButtons.OK,MessageBoxIcon.Error); 
             }
         }
     }
