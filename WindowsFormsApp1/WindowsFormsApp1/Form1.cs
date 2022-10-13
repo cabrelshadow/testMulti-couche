@@ -24,7 +24,16 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("salut");
+         if(email.Text=="admin" && password.Text == "admin")
+            {
+                authentification auth = new authentification();
+                this.Hide();
+                auth.Show();
+            }
+            else
+            {
+                MessageBox.Show("login ou mot de passe incorrect");
+            }
         }
     }
 }
